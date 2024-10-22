@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main()
+{
+    int n;
+    std::cin >> n;
+
+	for (int i = 1; i < n; i++)
+	{
+		int ai = i * i + 3 * i;
+		std::cout << ai << std::endl;
+	}
+
+}
+
