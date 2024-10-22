@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main()
+{
+	for (char ch = 'A'; ch <= 'Z'; ch++)
+	{
+		if (ch != 'A' && ch != 'O' && ch != 'U' && ch != 'E' && ch != 'Y' && ch != 'I')
+		{
+			std::cout << ch << " ";
+		}
+	}
+}
