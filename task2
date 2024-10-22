@@ -1,0 +1,35 @@
+#include <iostream>
+
+int main()
+{
+    int n , num;
+    std::cin >> n;
+	bool maxNegativeNum = false;
+	int maxNegative = -1000000;
+
+	for (int i = 0; i < n; i++)
+	{
+		std::cin >> num;
+
+		if (num < 0)
+		{
+			maxNegativeNum = true;
+
+			if (num > maxNegative)
+			{
+				maxNegative = num;
+				maxNegativeNum = true;
+			}
+		}
+	}
+
+	if (maxNegativeNum == true)
+	{
+		std::cout << maxNegative << std::endl;
+	}
+	else
+	{
+		std::cout << "No found negative nums" << std::endl;
+	}
+}
+
