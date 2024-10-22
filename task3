@@ -1,0 +1,28 @@
+#include <iostream>
+
+int main()
+{
+    int n;
+    std::cin >> n;
+
+	int a = 0, b = 2, c;
+
+	if (n == 0)
+	{
+		std::cout << "0 pow to 0 : 0" << std::endl;
+	}
+	else if (n == 1)
+	{
+		std::cout << "1 pow to 1 : 1" << std::endl;
+	}
+
+	for (int i = 2; i <= n; i++)
+	{
+		c = a + b;
+		a = b;
+		b = c;
+	}
+
+	std::cout << b << std::endl;
+}
+
