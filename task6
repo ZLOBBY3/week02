@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cmath>
+
+int main()
+{
+    int num , n;
+    std::cin >> num >> n;
+    int result = 1.0;
+
+    //double result = pow(num, n);
+
+    if (num > 0)
+    {
+        for (int i = 0; i < n; i++)
+        {
+            result *= num;
+        }
+    }
+
+    std::cout << result << std::endl;
+
+}
+
